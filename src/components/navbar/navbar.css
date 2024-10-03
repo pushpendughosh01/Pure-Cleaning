@@ -16,13 +16,13 @@
  .navbar .munuBarContainer {
 	 display: none;
 }
- .navbar .anushka {
+ .navbar .purelyClean {
 
 	 padding: 0 1rem;
 	 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	 font-size: 2rem;
 }
- .navbar .anushka:hover {
+ .navbar .purelyClean:hover {
 	 cursor: pointer;
 }
  .navbar .navlinkContainer .navLinks {
@@ -87,7 +87,7 @@
 		 border-radius: 0px;
 	}
 
-	 .navbar .anushka {
+	 .navbar .purelyClean {
 		 font-size: 1.5rem;
 	}
 	 .moveNavbar {

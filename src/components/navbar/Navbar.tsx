@@ -15,7 +15,9 @@ const Navbar = () => {
   return (
     <Fragment>
             <nav className="navbar ">
-                <h1 className="anushka" >LOGO</h1>
+                <h1 className="purelyClean" >
+                    <img src="/logo.jpg" className="max-w-24 p-2" />
+                </h1>
                 <div className="munuBarContainer">
                     <Hamburger toggled={isOpen} toggle={setOpen} size={25} />
                 </div>
