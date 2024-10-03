@@ -225,7 +225,7 @@ const WhatweClean = () => {
         <div className="mt-12 text-center">
           <a
             className="py-3 px-4 inline-flex items-center gap-x-1 text-sm font-medium rounded-full border  bg-black text-white shadow-sm hover:bg-gray-700 focus:outline-none    "
-            href="#"
+            href="/service"
           >
             More Cleaning Services
             <svg

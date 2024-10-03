@@ -12,7 +12,7 @@ const AboutMain = () => {
           <div className="space-y-5 lg:space-y-8">
          
             <h2 className="text-3xl font-bold lg:text-5xl ">
-              About US
+              About Us
             </h2>
             <div className="flex items-center gap-x-5">
               <a
@@ -42,14 +42,14 @@ const AboutMain = () => {
                   <figure className="relative w-full h-60">
                     <img
                       className="size-full absolute top-0 start-0 object-cover rounded-xl"
-                      src="https://images.unsplash.com/photo-1670272505340-d906d8d77d03?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80"
+                      src="/clean.jpg"
                       alt="Blog Image"
                     />
                   </figure>
                   <figure className="relative w-full h-60">
                     <img
                       className="size-full absolute top-0 start-0 object-cover rounded-xl"
-                      src="https://images.unsplash.com/photo-1671726203638-83742a2721a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80"
+                      src="office.png"
                       alt="Blog Image"
                     />
                   </figure>
@@ -57,7 +57,7 @@ const AboutMain = () => {
                 <figure className="relative w-full h-72 sm:h-96 lg:h-full">
                   <img
                     className="size-full absolute top-0 start-0 object-cover rounded-xl"
-                    src="https://images.unsplash.com/photo-1671726203394-491c8b574a0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80"
+                    src="hero.webp"
                     alt="Blog Image"
                   />
                 </figure>
@@ -96,7 +96,7 @@ const AboutMain = () => {
             <figure>
               <img
                 className="w-full object-cover rounded-xl"
-                src="https://images.unsplash.com/photo-1671726203454-488ab18f7eda?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80"
+                src="hero.webp"
                 alt="Blog Image"
               />
               <figcaption className="mt-3 text-sm text-center text-gray-500 dark:text-neutral-500">
@@ -288,26 +288,21 @@ const AboutMain = () => {
         <div className="sticky top-0 start-0 py-16 lg:ps-8">
           {/* Avatar Media */}
           <div className="group flex items-center gap-x-3 border-b border-gray-200 pb-8 mb-8 dark:border-neutral-700">
-            <a className="block shrink-0 focus:outline-none" href="#">
-              <img
-                className="size-10 rounded-full"
-                src="https://images.unsplash.com/photo-1669837401587-f9a4cfe3126e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80"
-                alt="Avatar"
-              />
-            </a>
-            <a className="group grow block focus:outline-none" href="">
+
+            <a className="group grow block focus:outline-none" target="_blank"
+            href="https://www.instagram.com/purely.services/">
               <h5 className="group-hover:text-gray-600 group-focus:text-gray-600 text-sm font-semibold text-gray-800 dark:group-hover:text-neutral-400 dark:group-focus:text-neutral-400 ">
-                Leyla Ludic
+              Purely Services
               </h5>
               <p className="text-sm text-gray-500 dark:text-neutral-500">
-                UI/UX enthusiast
+              Al Muroor, Abu Dhabi UAE
               </p>
             </a>
             <div className="grow">
               <div className="flex justify-end">
                 <button
                   type="button"
-                  className="py-1.5 px-2.5 inline-flex items-center gap-x-2 text-xs font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none"
+                  className="py-1.5 px-2.5 inline-flex items-center gap-x-2 text-xs font-medium rounded-lg border border-transparent bg-blue-600 text-white pointer-events-none"
                 >
                   <svg
                     className="shrink-0 size-4"
