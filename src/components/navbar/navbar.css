@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@100;700&display=swap');
+
+.navbar {
+	 display: flex;
+	 justify-content: space-between;
+	 align-items: center;
+	 position: fixed;
+	 top: 0;
+	 left: 0;
+	 right: 0;
+	 padding: 0.5rem 10rem;
+	 z-index: 99;
+	 background-color: #ffffff;
+
+}
+ .navbar .munuBarContainer {
+	 display: none;
+}
+ .navbar .anushka {
+
+	 padding: 0 1rem;
+	 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	 font-size: 2rem;
+}
+ .navbar .anushka:hover {
+	 cursor: pointer;
+}
+ .navbar .navlinkContainer .navLinks {
+	 display: flex;
+	 gap: 0rem 0.5rem;
+	 max-height: 2rem;
+}
+ .navbar .navlinkContainer .navLinks .linkText {
+	 cursor: pointer;
+	 display: flex;
+	 align-items: center;
+	 text-decoration: none;
+
+	 font-size: 1rem;
+	 font-weight: 600;
+	 text-transform:capitalize;
+	 padding: 0.2rem 1.25rem;
+}
+
+ @media (max-width: 1200px) {
+	 .navbar {
+		 padding: 0rem 2rem;
+	}
+}
+ @media (max-width: 784px) {
+	 .navbar {
+		 position: fixed;
+		 top: 0;
+		 left: 0;
+		 padding: 0rem;
+		 width: 100%;
+		
+
+	}
+	 .navbar .munuBarContainer {
+		 display: block;
+		 z-index: 3;
+		 padding: 0.5rem 0.25rem;
+		 color: rgb(0, 0, 0);
+	}
+	 .navbar .navlinkContainer {
+		 z-index: 2;
+		 position: fixed;
+		 left: 0;
+		 right: 0;
+		 top: 0;
+		 padding-top: 2rem;
+		 transition: transform 0.5s linear;
+		 height: 100%;
+         background-color: #fff;
+	}
+	 .navbar .navlinkContainer .navLinks {
+		 display: block;
+		 text-align: center;
+	}
+	 .navbar .navlinkContainer .navLinks .linkText {
+		 display: block;
+		 text-align: center;
+		 border: none;
+
+		 padding: 1.5rem;
+		 border-radius: 0px;
+	}
+
+	 .navbar .anushka {
+		 font-size: 1.5rem;
+	}
+	 .moveNavbar {
+		 transform: translateX(-50rem);
+	}
+}
+ 
