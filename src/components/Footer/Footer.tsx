@@ -76,7 +76,7 @@ const Footer = () => {
               title="Our address"
               className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
             >
-              Al Muroor Street, Abu Dhabi, UAE
+              Al Muroor, Abu Dhabi UAE
             </a>
           </div>
         </div>

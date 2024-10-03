@@ -30,6 +30,9 @@ const Navbar = () => {
                             <Link className="linkText" href="/about" onClick={handleOpen}>
                                 About
                             </Link>
+                            <Link className="linkText" href="/service" onClick={handleOpen}>
+                                Services
+                            </Link>
 
                             <Link className="linkText" href="/contact" onClick={handleOpen}>
                                 Contact

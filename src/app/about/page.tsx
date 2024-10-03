@@ -2,6 +2,7 @@ import Footer from '@/components/Footer/Footer';
 import Navbar from '@/components/navbar/Navbar';
 import React from 'react';
 import SmoothScrolling from '@/components/SmoothScrolling';
+import AboutMain from './AboutMain';
 
 
 const page = () => {
@@ -10,7 +11,8 @@ const page = () => {
 		<div>
 			<Navbar />
 			<SmoothScrolling>
-				<Footer />
+			<AboutMain/>
+			<Footer />
 			</SmoothScrolling>
 		</div>
 	);

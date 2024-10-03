@@ -4,7 +4,7 @@ const ContactHero = () => {
   return (
     <>
       {/* Contact */}
-      <div className="max-w-7xl px-4 lg:px-6 lg:px-8 py-12 lg:py-24 mx-auto">
+      <div className="mt-6 max-w-7xl px-4  lg:px-8 py-12 lg:py-24 mx-auto">
         <div className="mb-6 sm:mb-10 max-w-2xl text-center mx-auto">
           <h2 className="font-extrabold text-black text-2xl sm:text-4xl ">
             Contact Us
@@ -89,10 +89,12 @@ const ContactHero = () => {
                     <p>
                       <a
                         className="relative inline-block font-medium text-black before:absolute before:bottom-0.5 before:start-0 before:-z-[1] before:w-full before:h-1 before:bg-sky-200 hover:before:bg-black focus:outline-none focus:before:bg-black  dark:hover:before:bg-white dark:focus:before:bg-white"
-                        href="mailto:example@site.so"
+                        href="mailto:purelyservices01@gmail.com"
+                        
                       >
-                        hello@example.so
+                        purelyservices01@gmail.com
                       </a>
+                      
                     </p>
                   </div>
                 </div>
@@ -118,9 +120,9 @@ const ContactHero = () => {
                     <p>
                       <a
                         className="relative inline-block font-medium text-black before:absolute before:bottom-0.5 before:start-0 before:-z-[1] before:w-full before:h-1 before:bg-sky-200 hover:before:bg-black focus:outline-none focus:before:bg-black  dark:hover:before:bg-white dark:focus:before:bg-white"
-                        href="mailto:example@site.so"
+                        href="tel:+971 50 504 0045"
                       >
-                        +44 222 777-000
+                        +971 50 504 0045
                       </a>
                     </p>
                   </div>
