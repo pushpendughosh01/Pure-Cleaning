@@ -5,7 +5,7 @@ export const products = [
     category: "Vehicle",
     price: 49.99,
     image:
-      "https://www.thecleaning.company/wp-content/uploads/2024/05/Sofa-2.jpg",
+      "https://www.yashautomedik.com/wp-content/uploads/2022/12/How-To-Select-The-Best-Car-Cleaning-Products-1200x800.jpg",
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ export const products = [
     category: "Furniture",
     price: 79.99,
     image:
-      "https://www.thecleaning.company/wp-content/uploads/2024/05/Sofa-2.jpg",
+      "https://media.angi.com/s3fs-public/Man-professionally-cleaning-couch.jpg?impolicy=leadImage",
   },
   {
     id: 3,
@@ -37,7 +37,7 @@ export const products = [
     category: "Commercial",
     price: 199.99,
     image:
-      "https://www.thecleaning.company/wp-content/uploads/2024/05/Sofa-2.jpg",
+      "https://img.freepik.com/premium-photo/workers-cleaning-service-company-carrying-out-their-work-openspace-office_274679-35142.jpg",
   },
   {
     id: 6,
@@ -61,6 +61,6 @@ export const products = [
     category: "Furniture",
     price: 89.99,
     image:
-      "https://www.thecleaning.company/wp-content/uploads/2024/05/Sofa-2.jpg",
+      "https://winducks.com/wp-content/uploads/2023/10/5-advantages-of-professional-window-cleaning.jpg",
   },
 ];

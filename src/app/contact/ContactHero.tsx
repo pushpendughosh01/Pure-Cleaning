@@ -24,6 +24,7 @@ const ContactHero = () => {
           </div>
           {/* End Col */}
           <div className="space-y-8 lg:space-y-16">
+            <img src="/logo.jpg" className='md:max-w-52 max-w-44'/>
             <div>
               <h3 className="mb-5 font-semibold text-black text-2xl ">
                 Our address
@@ -89,8 +90,8 @@ const ContactHero = () => {
                     <p>
                       <a
                         className="relative inline-block font-medium text-black before:absolute before:bottom-0.5 before:start-0 before:-z-[1] before:w-full before:h-1 before:bg-sky-200 hover:before:bg-black focus:outline-none focus:before:bg-black  dark:hover:before:bg-white dark:focus:before:bg-white"
-                        href="mailto:purelyservices01@gmail.com"
-                        
+                        href="https://mail.google.com/mail/?view=cm&fs=1&to=purelyservices01@gmail.com&su=SUBJECT&body=BODY&bcc=purelyservices01@gmail.com"
+                        target='_blank'
                       >
                         purelyservices01@gmail.com
                       </a>
