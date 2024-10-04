@@ -27,7 +27,7 @@ export default function ProductPage() {
 
   
     return (
-        <div className="container mx-auto px-12 py-8 mt-12 mb-24">
+        <div className="container mx-auto md:px-12 px-4 py-8 mt-12 mb-24">
         <h1 className="md:text-4xl text-2xl text-center font-bold mb-8">Our Cleaning Services</h1>
         
         <div className="mb-8 flex flex-col sm:flex-row gap-4 items-center justify-center">

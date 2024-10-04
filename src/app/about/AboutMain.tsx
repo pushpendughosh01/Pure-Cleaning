@@ -25,14 +25,14 @@ const AboutMain = () => {
                 January 18, 2023
               </p>
             </div>
-            <p className="text-lg text-gray-800 ">
+            <p className="md:text-lg text-gray-800 ">
               At preline, our mission has always been focused on bringing
               openness and transparency to the design process. Weve always
               believed that by providing a space where designers can share
               ongoing work not only empowers them to make better products, it
               also helps them grow.
             </p>
-            <p className="text-lg text-gray-800 ">
+            <p className="md:text-lg text-gray-800 ">
               Wre proud to be a part of creating a more open culture and to
               continue building a product that supports this vision.
             </p>
@@ -66,14 +66,14 @@ const AboutMain = () => {
                 Working process
               </span>
             </div>
-            <p className="text-lg text-gray-800 ">
+            <p className="md:text-lg text-gray-800 ">
               As ve grown, weve seen how Preline has helped companies such
               as Spotify, Microsoft, Airbnb, Facebook, and Intercom bring their
               designers closer together to create amazing things. ve also
               learned that when the culture of sharing is brought in earlier,
               the better teams adapt and communicate with one another.
             </p>
-            <p className="text-lg text-gray-800 ">
+            <p className="md:text-lg text-gray-800 ">
               That why we are excited to share that we now have a{" "}
               <a
                 className="text-blue-600 decoration-2 hover:underline focus:outline-none focus:underline font-medium dark:text-blue-500"
