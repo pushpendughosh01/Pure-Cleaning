@@ -20,22 +20,22 @@ export default function WhatsAppButtons() {
       <Button
         variant="secondary"
         size="default"
-        className="fixed  bg-transparent left-2 md:bottom-16  bottom-8 rounded-full "
+        className="fixed  hover:bg-transparent  bg-transparent left-2 md:bottom-16  bottom-8 rounded-full "
         onClick={handleMessage}
         aria-label="WhatsApp Message"
       >
         {/* <MessageCircle className="md:h-24  md:w-24 " /> */}
-        <img src="/whatsApp.png" className="md:w-14 w-12 drop-shadow-md rounded-full"/>
+        <img src="/whatsApp.png" className="md:w-14 w-12 hover:drop-shadow-md drop-shadow-md rounded-full"/>
       </Button>
 
       <Button
         variant="secondary"
         size="default"
-        className="fixed bg-transparent md:right-6 right-2 md:bottom-16 bottom-8 rounded-full"
+        className="fixed hover:bg-transparent  bg-transparent md:right-6 right-2 md:bottom-16 bottom-8 rounded-full"
         onClick={handleCall}
         aria-label="Call"
       >
-    <img src="/Phone.png" className="md:w-14 w-12 drop-shadow-md rounded-full"/>
+    <img src="/Phone.png" className="md:w-14 w-12 hover:drop-shadow-md drop-shadow-md rounded-full"/>
       </Button>
     </>
   );
