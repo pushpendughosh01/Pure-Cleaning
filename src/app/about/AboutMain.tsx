@@ -19,10 +19,10 @@ const AboutMain = () => {
                 className="inline-flex items-center gap-1.5 py-1 px-3 sm:py-2 sm:px-4 rounded-full text-xs sm:text-sm bg-gray-800 text-white hover:bg-gray-200 focus:outline-none focus:bg-gray-700    "
                 href="#"
               >
-                Company News
+                Purely Cleaning Services
               </a>
               <p className="text-xs sm:text-sm text-gray-800 ">
-                January 18, 2023
+               Year 2024
               </p>
             </div>
             <p className="md:text-lg text-gray-800 ">
