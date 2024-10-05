@@ -5,6 +5,7 @@ import { Squeeze as Hamburger } from "hamburger-react";
 import Link from "next/link";
 import initTranslations from "@/app/i18n";
 import { useParams } from "next/navigation";
+import LanguageChanger from "../Language/LanguageChanger";
 
 // Define a type for your translations
 interface Translations {
@@ -13,14 +14,14 @@ interface Translations {
 
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
-  const [t, setTranslations] = useState<Translations | null>(null); // Start as null
-
   const handleOpen = () => {
     setOpen(!isOpen);
   };
 
-  const locale = useParams<{ locale: string }>();
 
+
+  const [t, setTranslations] = useState<Translations | null>(null); 
+  const locale = useParams<{ locale: string }>();
   useEffect(() => {
     const fetchTranslations = async () => {
       try {
@@ -37,17 +38,21 @@ const Navbar = () => {
   }, [locale]);
 
   if (!t) {
-    return <div>Loading translations...</div>; // Show a loading state while fetching
+    return <div>Loading...</div>;
   }
+
+
+
 
   return (
     <Fragment>
       {t.t && ( // Ensure t.t is defined before using it
         <nav className="navbar">
           <h1 className="purelyClean">
-            <img src="/logo.jpg" className="max-w-24 p-2" />
+            <img src="/logo.jpg" className="max-w-36 p-2" />
           </h1>
           <div className="munuBarContainer">
+            {!isOpen && (<LanguageChanger/>)}
             <Hamburger toggled={isOpen} toggle={setOpen} size={25} />
           </div>
           <div className={`navlinkContainer ${isOpen ? "" : "moveNavbar"}`}>
@@ -64,6 +69,9 @@ const Navbar = () => {
               <Link className="linkText" href="/contact" onClick={handleOpen}>
                 {t.t("Contact")}
               </Link>
+              <div className="-mt-2 hidden lg:block">
+              <LanguageChanger/>
+              </div>
             </div>
           </div>
         </nav>
