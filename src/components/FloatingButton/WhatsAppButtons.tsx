@@ -20,7 +20,7 @@ export default function WhatsAppButtons() {
       <Button
         variant="secondary"
         size="default"
-        className="fixed  hover:bg-transparent  bg-transparent left-2 md:bottom-16  bottom-8 rounded-full "
+        className="fixed z-10 hover:bg-transparent  bg-transparent left-2 md:bottom-16  bottom-8 rounded-full "
         onClick={handleMessage}
         aria-label="WhatsApp Message"
       >
@@ -31,7 +31,7 @@ export default function WhatsAppButtons() {
       <Button
         variant="secondary"
         size="default"
-        className="fixed hover:bg-transparent  bg-transparent md:right-6 right-2 md:bottom-16 bottom-8 rounded-full"
+        className="fixed z-10 hover:bg-transparent  bg-transparent md:right-6 right-2 md:bottom-16 bottom-8 rounded-full"
         onClick={handleCall}
         aria-label="Call"
       >
