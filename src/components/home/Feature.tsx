@@ -20,12 +20,10 @@ const Feature = () => {
           {/* Title */}
           <div className="space-y-2 md:space-y-4">
             <h2 className="font-bold text-3xl lg:text-4xl text-gray-800 ">
-              We tackle the challenges start-ups face
+              We tackle cleaning challenges 
             </h2>
             <p className="text-gray-500 ">
-              Besides working with start-up enterprises as a partner for
-              digitalization, we have built enterprise products for common pain
-              points that we have encountered in various products and projects.
+            Besides working with clients to maintain clean and healthy spaces, we have developed specialized cleaning solutions to address common challenges we’ve encountered across various cleaning projects.
             </p>
           </div>
           {/* End Title */}
@@ -50,7 +48,7 @@ const Feature = () => {
               </span>
               <div className="grow">
                 <span className="text-sm sm:text-base text-gray-500 dark:text-neutral-500">
-                  <span className="font-bold">Easy &amp; fast</span> designing
+                  <span className="font-bold">Quick  &amp; Efficient </span> Cleaning
                 </span>
               </div>
             </li>
@@ -73,7 +71,7 @@ const Feature = () => {
               </span>
               <div className="grow">
                 <span className="text-sm sm:text-base text-gray-500 dark:text-neutral-500">
-                  Powerful <span className="font-bold">features</span>
+                Advance  <span className="font-bold">Cleaning Techniques</span>
                 </span>
               </div>
             </li>
@@ -96,7 +94,7 @@ const Feature = () => {
               </span>
               <div className="grow">
                 <span className="text-sm sm:text-base text-gray-500 dark:text-neutral-500">
-                  User Experience Design
+                Exceptional Attention to Detail
                 </span>
               </div>
             </li>
