@@ -44,7 +44,7 @@ const AboutMain = () => {
                   <figure className="relative w-full h-60">
                     <img
                       className="size-full absolute top-0 start-0 object-cover rounded-xl"
-                      src="office.png"
+                      src="/office.png"
                       alt="Blog Image"
                     />
                   </figure>
@@ -52,7 +52,7 @@ const AboutMain = () => {
                 <figure className="relative w-full h-72 sm:h-96 lg:h-full">
                   <img
                     className="size-full absolute top-0 start-0 object-cover rounded-xl"
-                    src="hero.webp"
+                    src="/hero.webp"
                     alt="Blog Image"
                   />
                 </figure>
@@ -77,7 +77,7 @@ const AboutMain = () => {
             <figure>
               <img
                 className="w-full object-cover rounded-xl"
-                src="hero.webp"
+                src="/hero.webp"
                 alt="Blog Image"
               />
               <figcaption className="mt-3 text-sm text-center text-gray-500 dark:text-neutral-500">

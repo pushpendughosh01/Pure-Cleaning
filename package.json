@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "i18nexus pull && next dev",
+    "build": "i18nexus pull && next build",
+    "start": "i18nexus pull && next start",
     "lint": "next lint"
   },
   "dependencies": {
@@ -19,12 +19,16 @@
     "framer-motion": "^11.3.28",
     "gsap": "^3.12.5",
     "hamburger-react": "^2.5.1",
+    "i18next": "^23.15.2",
+    "i18next-resources-to-backend": "^1.2.1",
     "lenis": "^1.1.9",
     "lucide-react": "^0.447.0",
     "next": "14.2.5",
+    "next-i18n-router": "^5.5.1",
     "react": "^18",
     "react-dom": "^18",
     "react-fast-marquee": "^1.6.5",
+    "react-i18next": "^15.0.2",
     "tailwind-merge": "^2.5.3",
     "tailwindcss-animate": "^1.0.7"
   },
@@ -34,6 +38,7 @@
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "14.2.5",
+    "i18nexus-cli": "^3.5.0",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
