@@ -69,7 +69,7 @@ const Footer = () => {
             Socials:
           </span>
           <div className="flex items-center mt-1 space-x-3">
-           
+
             <a
               href="https://www.instagram.com/purely.services/"
               target="_blank"
