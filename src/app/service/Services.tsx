@@ -50,7 +50,7 @@ export default function ProductPage() {
           </Select>
         </div>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="grid my-20 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {filteredProducts.map(product => (
             <Card key={product.id} className="overflow-hidden">
               <Image
@@ -65,7 +65,7 @@ export default function ProductPage() {
                 <p className="text-sm text-gray-600">{product.category}</p>
               </CardContent>
               <CardFooter className="p-4 flex justify-between items-center">
-                <span className="text-lg font-bold">${product.price.toFixed(2)}</span>
+                {/* <span className="text-lg font-bold">${product.price.toFixed(2)}</span> */}
                 <a href="/contact" className='text-white text-sm bg-black py-2 px-4 rounded-3xl cursor-pointer'>Contact For Booking</a>
               </CardFooter>
             </Card>

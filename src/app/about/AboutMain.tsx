@@ -26,15 +26,10 @@ const AboutMain = () => {
               </p>
             </div>
             <p className="md:text-lg text-gray-800 ">
-              At preline, our mission has always been focused on bringing
-              openness and transparency to the design process. Weve always
-              believed that by providing a space where designers can share
-              ongoing work not only empowers them to make better products, it
-              also helps them grow.
+            Welcome to Pure Cleaning Services, Dubai’s trusted partner for premium cleaning and sanitization services. With a commitment to excellence and a passion for maintaining pristine environments, we offer a wide range of cleaning solutions tailored to meet the unique needs of homes and businesses across the city.
             </p>
             <p className="md:text-lg text-gray-800 ">
-              Wre proud to be a part of creating a more open culture and to
-              continue building a product that supports this vision.
+            Join the hundreds of satisfied customers who trust Pure Cleaning Services for their cleaning needs. Let us transform your space into a cleaner, healthier, and more comfortable environment.
             </p>
             <div className="text-center">
               <div className="grid lg:grid-cols-2 gap-3">
@@ -67,31 +62,17 @@ const AboutMain = () => {
               </span>
             </div>
             <p className="md:text-lg text-gray-800 ">
-              As ve grown, weve seen how Preline has helped companies such
-              as Spotify, Microsoft, Airbnb, Facebook, and Intercom bring their
-              designers closer together to create amazing things. ve also
-              learned that when the culture of sharing is brought in earlier,
-              the better teams adapt and communicate with one another.
+            To provide top-tier cleaning services that exceed expectations, ensuring a clean, healthy, and inviting environment for all our clients in Dubai.
             </p>
             <p className="md:text-lg text-gray-800 ">
-              That why we are excited to share that we now have a{" "}
-              <a
-                className="text-blue-600 decoration-2 hover:underline focus:outline-none focus:underline font-medium dark:text-blue-500"
-                href="#"
-              >
-                free version of Preline
-              </a>
-              , which will allow individual designers, startups and other small
-              teams a chance to create a culture of openness early on.
+            As a locally-owned company, we are dedicated to serving the Dubai community with integrity, efficiency, and customer-focused service. We believe that a clean space is essential to well-being, and we go the extra mile to make sure our clients experience the difference.
+             
             </p>
             <blockquote className="text-center p-4 sm:px-7">
               <p className="text-xl font-medium text-gray-800 lg:text-2xl lg:leading-normal xl:text-2xl xl:leading-normal ">
-                To say that switching to Preline has been life-changing is an
-                understatement. My business has tripled and I got my life back.
+              The importance of cleanliness is creating healthy-welcoming space. 
               </p>
-              <p className="mt-5 text-gray-800 ">
-                Nicole Grazioso
-              </p>
+
             </blockquote>
             <figure>
               <img
@@ -100,7 +81,7 @@ const AboutMain = () => {
                 alt="Blog Image"
               />
               <figcaption className="mt-3 text-sm text-center text-gray-500 dark:text-neutral-500">
-                A man and a woman looking at a cell phone.
+              Restoring the shine to your floors.
               </figcaption>
             </figure>
 
@@ -335,7 +316,7 @@ const AboutMain = () => {
             >
               <div className="grow">
                 <span className="text-sm font-bold text-gray-800 group-hover:text-blue-600 group-focus:text-blue-600  dark:group-hover:text-blue-500 dark:group-focus:text-blue-500">
-                  5 Reasons to Not start a UX Designer Career in 2022/2023
+                Delivering exceptional results in every service.
                 </span>
               </div>
               <div className="shrink-0 relative rounded-lg overflow-hidden size-20">
@@ -354,8 +335,7 @@ const AboutMain = () => {
             >
               <div className="grow">
                 <span className="text-sm font-bold text-gray-800 group-hover:text-blue-600 group-focus:text-blue-600  dark:group-hover:text-blue-500 dark:group-focus:text-blue-500">
-                  If your UX Portfolio has this 20% Well Done, it Will Give You
-                  an 80% Result
+                On-time, every time, with services you can count on.
                 </span>
               </div>
               <div className="shrink-0 relative rounded-lg overflow-hidden size-20">
@@ -374,7 +354,7 @@ const AboutMain = () => {
             >
               <div className="grow">
                 <span className="text-sm font-bold text-gray-800 group-hover:text-blue-600 group-focus:text-blue-600  dark:group-hover:text-blue-500 dark:group-focus:text-blue-500">
-                  7 Principles of Icon Design
+                Prioritizing your satisfaction with every visit.
                 </span>
               </div>
               <div className="shrink-0 relative rounded-lg overflow-hidden size-20">

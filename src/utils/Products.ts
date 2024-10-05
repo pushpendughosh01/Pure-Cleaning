@@ -1,66 +1,98 @@
 export const products = [
   {
     id: 1,
-    name: "Car Cleaning",
-    category: "Vehicle",
-    price: 49.99,
-    image:
-      "https://www.yashautomedik.com/wp-content/uploads/2022/12/How-To-Select-The-Best-Car-Cleaning-Products-1200x800.jpg",
+    name: "Move in Move out Cleaning",
+    category: "Residential",
+    image: "https://www.thecleaning.company/wp-content/uploads/2024/05/Sofa-2.jpg",
   },
   {
     id: 2,
-    name: "Sofa Cleaning",
-    category: "Furniture",
-    price: 79.99,
-    image:
-      "https://media.angi.com/s3fs-public/Man-professionally-cleaning-couch.jpg?impolicy=leadImage",
+    name: "One Off Cleaning",
+    category: "Residential",
+    image: "https://www.thecleaning.company/wp-content/uploads/2024/05/Sofa-2.jpg",
   },
   {
     id: 3,
-    name: "Room Cleaning",
+    name: "Villa Deep Cleaning",
     category: "Residential",
-    price: 99.99,
-    image:
-      "https://www.thecleaning.company/wp-content/uploads/2024/05/Sofa-2.jpg",
+    image: "https://media.angi.com/s3fs-public/Man-professionally-cleaning-couch.jpg?impolicy=leadImage",
   },
   {
     id: 4,
-    name: "Deep Cleaning",
-    category: "Residential",
-    price: 149.99,
-    image:
-      "https://www.thecleaning.company/wp-content/uploads/2024/05/Sofa-2.jpg",
+    name: "Building Cleaning",
+    category: "Commercial",
+    image: "https://img.freepik.com/premium-photo/workers-cleaning-service-company-carrying-out-their-work-openspace-office_274679-35142.jpg",
   },
   {
     id: 5,
-    name: "Office Cleaning",
+    name: "Hotel and Apartment Cleaning",
     category: "Commercial",
-    price: 199.99,
-    image:
-      "https://img.freepik.com/premium-photo/workers-cleaning-service-company-carrying-out-their-work-openspace-office_274679-35142.jpg",
+    image: "https://www.thecleaning.company/wp-content/uploads/2024/05/Sofa-2.jpg",
   },
   {
     id: 6,
-    name: "Carpet Cleaning",
-    category: "Furniture",
-    price: 59.99,
-    image:
-      "https://www.thecleaning.company/wp-content/uploads/2024/05/Sofa-2.jpg",
+    name: "School and Office Cleaning",
+    category: "Commercial",
+    image: "https://img.freepik.com/premium-photo/workers-cleaning-service-company-carrying-out-their-work-openspace-office_274679-35142.jpg",
   },
   {
     id: 7,
-    name: "Window Cleaning",
-    category: "Residential",
-    price: 29.99,
-    image:
-      "https://www.thecleaning.company/wp-content/uploads/2024/05/Sofa-2.jpg",
+    name: "Swimming Pool Cleaning",
+    category: "Outdoor",
+    image: "https://www.thecleaning.company/wp-content/uploads/2024/05/Sofa-2.jpg",
   },
   {
     id: 8,
-    name: "Mattress Cleaning",
+    name: "General Domestic Cleaning",
+    category: "Residential",
+    image: "https://media.angi.com/s3fs-public/Man-professionally-cleaning-couch.jpg?impolicy=leadImage",
+  },
+  {
+    id: 9,
+    name: "General Maintenance",
+    category: "Commercial",
+    image: "https://www.thecleaning.company/wp-content/uploads/2024/05/Sofa-2.jpg",
+  },
+  {
+    id: 10,
+    name: "Event Manpower Supply",
+    category: "Commercial",
+    image: "https://img.freepik.com/premium-photo/workers-cleaning-service-company-carrying-out-their-work-openspace-office_274679-35142.jpg",
+  },
+  {
+    id: 11,
+    name: "Carpet Cleaning",
     category: "Furniture",
-    price: 89.99,
-    image:
-      "https://winducks.com/wp-content/uploads/2023/10/5-advantages-of-professional-window-cleaning.jpg",
+    image: "https://www.thecleaning.company/wp-content/uploads/2024/05/Sofa-2.jpg",
+  },
+  {
+    id: 12,
+    name: "Wet and Dry Cleaning of Beds and Sofas",
+    category: "Furniture",
+    image: "https://media.angi.com/s3fs-public/Man-professionally-cleaning-couch.jpg?impolicy=leadImage",
+  },
+  {
+    id: 13,
+    name: "Sterilization Services",
+    category: "Residential",
+    image: "https://winducks.com/wp-content/uploads/2023/10/5-advantages-of-professional-window-cleaning.jpg",
+  },
+  {
+    id: 14,
+    name: "Car Wash Services",
+    category: "Vehicle",
+    image: "https://www.yashautomedik.com/wp-content/uploads/2022/12/How-To-Select-The-Best-Car-Cleaning-Products-1200x800.jpg",
+  },
+  {
+    id: 15,
+    name: "Sofa Cleaning",
+    category: "Furniture",
+    image: "https://media.angi.com/s3fs-public/Man-professionally-cleaning-couch.jpg?impolicy=leadImage",
+  },
+  {
+    id: 16,
+    name: "Carpet Cleaning",
+    category: "Furniture",
+    image: "https://www.thecleaning.company/wp-content/uploads/2024/05/Sofa-2.jpg",
   },
 ];

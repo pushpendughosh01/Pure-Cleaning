@@ -33,11 +33,10 @@ const WhatweClean = () => {
             </div>
             <div className="my-6">
               <h3 className="text-xl font-semibold text-gray-800  ">
-                CAR WASH
+                Car Wash
               </h3>
               <p className="mt-5 text-gray-600 dark:text-neutral-400">
-                While we can customize your cleaning plan to suit your needs,
-                most clients schedule regular cleaning services:
+              Our professional car wash service ensures your vehicle shines like new, inside and out. We use eco-friendly products and advanced techniques to remove dirt, grime, and stains, leaving your car spotless and protected.
               </p>
             </div>
             <div className="mt-auto flex items-center gap-x-3">
@@ -68,8 +67,7 @@ const WhatweClean = () => {
                 General Cleaning Service
               </h3>
               <p className="mt-5 text-gray-600 dark:text-neutral-400">
-                While we can customize your cleaning plan to suit your needs,
-                most clients schedule regular cleaning services:
+              Experience a clean and fresh environment with our comprehensive general cleaning services. From homes to offices, we tackle every corner, ensuring a hygienic and welcoming space for you to enjoy
               </p>
             </div>
             <div className="mt-auto flex items-center gap-x-3">
@@ -100,8 +98,7 @@ const WhatweClean = () => {
                 Bed Cleaning
               </h3>
               <p className="mt-5 text-gray-600 dark:text-neutral-400">
-                While we can customize your cleaning plan to suit your needs,
-                most clients schedule regular cleaning services:
+              Breathe easier and sleep better with our bed cleaning service. We eliminate dust, allergens, and bacteria from your mattress, giving you a healthier sleeping environment and peace of mind.:
               </p>
             </div>
             <div className="mt-auto flex items-center gap-x-3">
@@ -128,17 +125,16 @@ const WhatweClean = () => {
             <div className="aspect-w-16 aspect-h-11">
               <img
                 className="w-full object-cover rounded-xl"
-                src="/car-wash-2.jpg"
+                src="/sanitization.jpg"
                 alt="Blog Image"
               />
             </div>
             <div className="my-6">
               <h3 className="text-xl font-semibold text-gray-800  ">
-                CAR WASH
+              Sanitization Services
               </h3>
               <p className="mt-5 text-gray-600 dark:text-neutral-400">
-                While we can customize your cleaning plan to suit your needs,
-                most clients schedule regular cleaning services:
+              Protect your space with our thorough sanitization services. We disinfect every surface, using safe, effective methods to ensure your home or office is free from harmful germs and bacteria.
               </p>
             </div>
             <div className="mt-auto flex items-center gap-x-3">
@@ -160,17 +156,16 @@ const WhatweClean = () => {
             <div className="aspect-w-16 aspect-h-11">
               <img
                 className="w-full object-cover rounded-xl"
-                src="/spring.svg"
+                src="/sofa.jpg"
                 alt="Blog Image"
               />
             </div>
             <div className="my-6">
               <h3 className="text-xl font-semibold text-gray-800  ">
-                General Cleaning Service
+                Carpet and Sofa Cleaning
               </h3>
               <p className="mt-5 text-gray-600 dark:text-neutral-400">
-                While we can customize your cleaning plan to suit your needs,
-                most clients schedule regular cleaning services:
+              Revitalize your carpets and sofas with our deep cleaning services. We remove stains, odors, and dirt, restoring the freshness and comfort of your furniture and ensuring a healthier living space.
               </p>
             </div>
             <div className="mt-auto flex items-center gap-x-3">
@@ -192,17 +187,16 @@ const WhatweClean = () => {
             <div className="aspect-w-16 aspect-h-11">
               <img
                 className="w-full object-cover rounded-xl"
-                src="/export.svg"
+                src="/floor.png"
                 alt="Blog Image"
               />
             </div>
             <div className="my-6">
               <h3 className="text-xl font-semibold text-gray-800  ">
-                House Cleaning
+                Floor Polishing
               </h3>
               <p className="mt-5 text-gray-600 dark:text-neutral-400">
-                While we can customize your cleaning plan to suit your needs,
-                most clients schedule regular cleaning services:
+              Bring back the shine to your floors with our professional floor polishing services. Whether it’s wood, tile, or marble, we polish and restore your floors, leaving them smooth, glossy, and looking brand new.
               </p>
             </div>
             <div className="mt-auto flex items-center gap-x-3">
