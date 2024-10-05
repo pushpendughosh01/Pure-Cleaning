@@ -6,15 +6,20 @@ import Link from "next/link";
 import initTranslations from "@/app/i18n";
 import { useParams } from "next/navigation";
 
+// Define a type for your translations
+interface Translations {
+  t: (key: string) => string; // Adjust this as needed based on your translation structure
+}
+
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
+  const [t, setTranslations] = useState<Translations | null>(null); // Start as null
 
   const handleOpen = () => {
     setOpen(!isOpen);
   };
 
   const locale = useParams<{ locale: string }>();
-  const [t, setTranslations] = useState({});
 
   useEffect(() => {
     const fetchTranslations = async () => {
@@ -25,6 +30,7 @@ const Navbar = () => {
         console.error("Failed to load translations:", error);
       }
     };
+
     if (locale) {
       fetchTranslations();
     }
@@ -36,33 +42,30 @@ const Navbar = () => {
 
   return (
     <Fragment>
-      {t?.t && (
-        <nav className="navbar ">
+      {t.t && ( // Ensure t.t is defined before using it
+        <nav className="navbar">
           <h1 className="purelyClean">
             <img src="/logo.jpg" className="max-w-24 p-2" />
           </h1>
           <div className="munuBarContainer">
             <Hamburger toggled={isOpen} toggle={setOpen} size={25} />
           </div>
-          {
-            <div className={` navlinkContainer ${isOpen ? "" : "moveNavbar"}`}>
-              <div className="navLinks">
-                <Link className="linkText" href="/" onClick={handleOpen}>
-                  {t.t("Home")}
-                </Link>
-                <Link className="linkText" href="/about" onClick={handleOpen}>
-                  {t.t("About")}
-                </Link>
-                <Link className="linkText" href="/service" onClick={handleOpen}>
-                  {t.t("Services")}
-                </Link>
-
-                <Link className="linkText" href="/contact" onClick={handleOpen}>
-                  {t.t("Contact")}
-                </Link>
-              </div>
+          <div className={`navlinkContainer ${isOpen ? "" : "moveNavbar"}`}>
+            <div className="navLinks">
+              <Link className="linkText" href="/" onClick={handleOpen}>
+                {t.t("Home")}
+              </Link>
+              <Link className="linkText" href="/about" onClick={handleOpen}>
+                {t.t("About")}
+              </Link>
+              <Link className="linkText" href="/service" onClick={handleOpen}>
+                {t.t("Services")}
+              </Link>
+              <Link className="linkText" href="/contact" onClick={handleOpen}>
+                {t.t("Contact")}
+              </Link>
             </div>
-          }
+          </div>
         </nav>
       )}
     </Fragment>
