@@ -12,7 +12,7 @@ const Hero = () => {
         Sparkling Clean Guaranteed Satisfaction
         </h1>
         <p className="mt-3 text-lg text-gray-800">
-        Take the first step to a sparkling home or office cleaning services !
+        Take the first step to a sparkling home or office cleaning services🧼 !
         </p>
         <div className="mt-5 lg:mt-8 flex flex-col items-center gap-2 sm:flex-row sm:gap-3">
           <div className="w-full sm:w-auto">
