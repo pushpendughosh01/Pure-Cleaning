@@ -91,8 +91,8 @@ export const products = [
   },
   {
     id: 16,
-    name: "Carpet Deep Cleaning",
-    category: "Furniture",
-    image: "https://images.squarespace-cdn.com/content/v1/56ac44725827c3c2672791e5/1605219765055-EPEDHM74L6QRPVDBM68N/Area+rug+cleaning+and+delivery+service+Seattle",
+    name: "Moving and Packing",
+    category: "Residential",
+    image: "https://images.squarespace-cdn.com/content/v1/5c19abcde74940df765ba7e9/0d4a87ce-9c3e-41b2-a57e-9a485b8c35fc/items-to-be-moved-some-boxed-some-not.jpg",
   },
 ];
