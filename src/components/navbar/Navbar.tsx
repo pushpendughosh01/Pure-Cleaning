@@ -52,7 +52,7 @@ const Navbar = () => {
             <img src="/logo.jpg" className="max-w-36 p-2" />
           </h1>
           <div className="munuBarContainer">
-            {!isOpen && (<LanguageChanger/>)}
+            <LanguageChanger/>
             <Hamburger toggled={isOpen} toggle={setOpen} size={25} />
           </div>
           <div className={`navlinkContainer ${isOpen ? "" : "moveNavbar"}`}>
