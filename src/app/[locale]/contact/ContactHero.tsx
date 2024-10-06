@@ -1,16 +1,53 @@
+"use client";
 import React from 'react'
+import initTranslations from "@/app/i18n";
+import { useParams } from "next/navigation";
+import { Fragment, useEffect, useState } from "react";
+
+interface Translations {
+  t: (key: string) => string; // Adjust this as needed based on your translation structure
+}
 
 const ContactHero = () => {
+
+  const [direction, setDirection] = useState<string>("text-left");
+  const [t, setTranslations] = useState<Translations | null>(null);
+  const locale = useParams<{ locale: string }>();
+  useEffect(() => {
+    const fetchTranslations = async () => {
+      try {
+        const translations = await initTranslations(locale.locale, ["Contact"]);
+        setTranslations(translations);
+
+        if (locale.locale === "en") {
+          setDirection("text-left");
+        } else if (locale.locale == "ar-AE") {
+          setDirection("text-right");
+        }
+      } catch (error) {
+        console.error("Failed to load translations:", error);
+      }
+    };
+
+    if (locale) {
+      fetchTranslations();
+    }
+  }, [locale]);
+
+  if (!t) {
+    return <div>Loading...</div>;
+  }
+
+
   return (
-    <>
-      {/* Contact */}
-      <div className="mt-6 max-w-7xl px-4  lg:px-8 py-12 lg:py-24 mx-auto">
-        <div className="mb-6 sm:mb-10 max-w-2xl text-center mx-auto">
-          <h2 className="font-extrabold text-black text-2xl sm:text-4xl ">
-            Contact Us
+    <Fragment>
+      {t.t && ( <div className="mt-6 max-w-7xl px-4  lg:px-8 py-12 lg:py-24 mx-auto">
+        <div className={`mb-6 sm:mb-10 max-w-2xl ${direction} mx-auto`}>
+          <h2 className={`font-extrabold text-black text-2xl sm:text-4xl `}>
+            {t.t("header")}
           </h2>
-          <p className='text-gray-600 p-4'>
-          We would love to hear from you! Whether you have questions, want to request a quote, or are ready to schedule a cleaning service, our team is here to assist you.
+          <p className={`text-gray-600  py-3 p-[1px]`}>
+            {t.t("p1")}
           </p>
           
         </div>
@@ -26,8 +63,8 @@ const ContactHero = () => {
           <div className="space-y-8 lg:space-y-16">
             <img src="/logo.jpg" className='md:max-w-52 max-w-44'/>
             <div>
-              <h3 className="mb-5 font-semibold text-black text-2xl ">
-                Our address
+              <h3 className={`${direction} mb-5 font-semibold text-black text-2xl `}>
+              {t.t("address")}
               </h3>
               {/* Grid */}
               <div className="grid sm:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-12">
@@ -53,8 +90,6 @@ const ContactHero = () => {
                     </p>
                     <address className="mt-1 text-black not-italic ">
                     Al Ain, Abu Dhabi, UAE
-                      <br />
-                      Glasgow G2 4JR
                     </address>
                   </div>
                 </div>
@@ -62,8 +97,8 @@ const ContactHero = () => {
               {/* End Grid */}
             </div>
             <div>
-              <h3 className="mb-5 font-semibold text-black text-2xl ">
-                Our contacts
+              <h3 className={` ${direction} mb-5 font-semibold text-black text-2xl `}>
+              {t.t("contact")}
               </h3>
               {/* Grid */}
               <div className="grid sm:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-12">
@@ -134,9 +169,10 @@ const ContactHero = () => {
           </div>
           {/* End Col */}
         </div>
-      </div>
-      {/* End Contact */}
-    </>
+      </div>)}
+     
+
+    </Fragment>
 
   )
 }
