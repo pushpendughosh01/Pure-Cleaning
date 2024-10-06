@@ -1,381 +1,411 @@
-import React from 'react'
+"use client";
+import React from "react";
+import initTranslations from "@/app/i18n";
+import { useParams } from "next/navigation";
+import { Fragment, useEffect, useState } from "react";
 
-const AboutMain = () => {
-  return (
-    <>
-  {/* Blog Article */}
-  <div className=" my-12 max-w-[85rem] px-4 sm:px-6 lg:px-8 mx-auto">
-    <div className="grid lg:grid-cols-3 gap-y-8 lg:gap-y-0 lg:gap-x-6">
-      {/* Content */}
-      <div className="lg:col-span-2">
-        <div className="py-8 lg:pe-8">
-          <div className="space-y-5 lg:space-y-8">
-         
-            <h2 className="text-3xl font-bold lg:text-5xl ">
-              About Us
-            </h2>
-            <div className="flex items-center gap-x-5">
-              <a
-                className="inline-flex items-center gap-1.5 py-1 px-3 sm:py-2 sm:px-4 rounded-full text-xs sm:text-sm bg-gray-800 text-white hover:bg-gray-200 focus:outline-none focus:bg-gray-700    "
-                href="#"
-              >
-                Purely Cleaning Services
-              </a>
-              <p className="text-xs sm:text-sm text-gray-800 ">
-               Year 2024
-              </p>
-            </div>
-            <p className="md:text-lg text-gray-800 ">
-            Welcome to Pure Cleaning Services, Dubai’s trusted partner for premium cleaning and sanitization services. With a commitment to excellence and a passion for maintaining pristine environments, we offer a wide range of cleaning solutions tailored to meet the unique needs of homes and businesses across the city.
-            </p>
-            <p className="md:text-lg text-gray-800 ">
-            Join the hundreds of satisfied customers who trust Pure Cleaning Services for their cleaning needs. Let us transform your space into a cleaner, healthier, and more comfortable environment.
-            </p>
-            <div className="text-center">
-              <div className="grid lg:grid-cols-2 gap-3">
-                <div className="grid grid-cols-2 lg:grid-cols-1 gap-3">
-                  <figure className="relative w-full h-60">
-                    <img
-                      className="size-full absolute top-0 start-0 object-cover rounded-xl"
-                      src="/clean.jpg"
-                      alt="Blog Image"
-                    />
-                  </figure>
-                  <figure className="relative w-full h-60">
-                    <img
-                      className="size-full absolute top-0 start-0 object-cover rounded-xl"
-                      src="/office.png"
-                      alt="Blog Image"
-                    />
-                  </figure>
-                </div>
-                <figure className="relative w-full h-72 sm:h-96 lg:h-full">
-                  <img
-                    className="size-full absolute top-0 start-0 object-cover rounded-xl"
-                    src="/hero.webp"
-                    alt="Blog Image"
-                  />
-                </figure>
-              </div>
-              <span className="mt-3 block text-sm text-center text-gray-500 dark:text-neutral-500">
-                Working process
-              </span>
-            </div>
-            <p className="md:text-lg text-gray-800 ">
-            To provide top-tier cleaning services that exceed expectations, ensuring a clean, healthy, and inviting environment for all our clients in Dubai.
-            </p>
-            <p className="md:text-lg text-gray-800 ">
-            As a locally-owned company, we are dedicated to serving the Dubai community with integrity, efficiency, and customer-focused service. We believe that a clean space is essential to well-being, and we go the extra mile to make sure our clients experience the difference.
-             
-            </p>
-            <blockquote className="text-center p-4 sm:px-7">
-              <p className="text-xl font-medium text-gray-800 lg:text-2xl lg:leading-normal xl:text-2xl xl:leading-normal ">
-              The importance of cleanliness is creating healthy-welcoming space. 
-              </p>
-
-            </blockquote>
-            <figure>
-              <img
-                className="w-full object-cover rounded-xl"
-                src="/hero.webp"
-                alt="Blog Image"
-              />
-              <figcaption className="mt-3 text-sm text-center text-gray-500 dark:text-neutral-500">
-              Restoring the shine to your floors.
-              </figcaption>
-            </figure>
-
-
-            <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center gap-y-5 lg:gap-y-0">
-             
-              <div className="flex justify-end items-center gap-x-1.5">
-                {/* Button */}
-                <div className="hs-tooltip inline-block">
-                  <button
-                    type="button"
-                    className="hs-tooltip-toggle flex items-center gap-x-2 text-sm text-gray-500 hover:text-gray-800 focus:outline-none focus:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
-                  >
-                    <svg
-                      className="shrink-0 size-4"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width={24}
-                      height={24}
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth={2}
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
-                    </svg>
-                    875
-                    <span
-                      className="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible -z-1 py-1 px-2 bg-gray-900 text-xs font-medium text-white rounded shadow-sm dark:bg-black"
-                      role="tooltip"
-                    >
-                      Like
-                    </span>
-                  </button>
-                </div>
-                {/* Button */}
-                <div className="block h-3 border-e border-gray-300 mx-3 dark:border-neutral-600" />
-                {/* Button */}
-                <div className="hs-tooltip inline-block">
-                  <button
-                    type="button"
-                    className="hs-tooltip-toggle flex items-center gap-x-2 text-sm text-gray-500 hover:text-gray-800 focus:outline-none focus:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
-                  >
-                    <svg
-                      className="shrink-0 size-4"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width={24}
-                      height={24}
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth={2}
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <path d="m3 21 1.9-5.7a8.5 8.5 0 1 1 3.8 3.8z" />
-                    </svg>
-                    16
-                    <span
-                      className="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible -z-1 py-1 px-2 bg-gray-900 text-xs font-medium text-white rounded shadow-sm dark:bg-black"
-                      role="tooltip"
-                    >
-                      Comment
-                    </span>
-                  </button>
-                </div>
-                {/* Button */}
-                <div className="block h-3 border-e border-gray-300 mx-3 dark:border-neutral-600" />
-                {/* Button */}
-                <div className="hs-dropdown relative inline-flex">
-                  <button
-                    id="hs-blog-article-share-dropdown"
-                    type="button"
-                    className="hs-dropdown-toggle flex items-center gap-x-2 text-sm text-gray-500 hover:text-gray-800 focus:outline-none focus:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
-                    aria-haspopup="menu"
-                    aria-expanded="false"
-                    aria-label="Dropdown"
-                  >
-                    <svg
-                      className="shrink-0 size-4"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width={24}
-                      height={24}
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth={2}
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8" />
-                      <polyline points="16 6 12 2 8 6" />
-                      <line x1={12} x2={12} y1={2} y2={15} />
-                    </svg>
-                    Share
-                  </button>
-                  <div
-                    className="hs-dropdown-menu w-56 transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden mb-1 -z-1 bg-gray-900 shadow-md rounded-xl p-2 dark:bg-black"
-                    role="menu"
-                    aria-orientation="vertical"
-                    aria-labelledby="hs-blog-article-share-dropdown"
-                  >
-                    <a
-                      className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-400 hover:bg-white/10 focus:outline-none focus:bg-white/10 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:focus:bg-neutral-900"
-                      href="#"
-                    >
-                      <svg
-                        className="shrink-0 size-4"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width={24}
-                        height={24}
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth={2}
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      >
-                        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-                        <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-                      </svg>
-                      Copy link
-                    </a>
-                    <div className="border-t border-gray-600 my-2 dark:border-neutral-800" />
-                    <a
-                      className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-400 hover:bg-white/10 focus:outline-none focus:bg-white/10 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:focus:bg-neutral-900"
-                      href="#"
-                    >
-                      <svg
-                        className="shrink-0 size-4"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width={16}
-                        height={16}
-                        fill="currentColor"
-                        viewBox="0 0 16 16"
-                      >
-                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
-                      </svg>
-                      Share on Twitter
-                    </a>
-                    <a
-                      className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-400 hover:bg-white/10 focus:outline-none focus:bg-white/10 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:focus:bg-neutral-900"
-                      href="#"
-                    >
-                      <svg
-                        className="shrink-0 size-4"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width={16}
-                        height={16}
-                        fill="currentColor"
-                        viewBox="0 0 16 16"
-                      >
-                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                      </svg>
-                      Share on Facebook
-                    </a>
-                    <a
-                      className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-400 hover:bg-white/10 focus:outline-none focus:bg-white/10 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:focus:bg-neutral-900"
-                      href="#"
-                    >
-                      <svg
-                        className="shrink-0 size-4"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width={16}
-                        height={16}
-                        fill="currentColor"
-                        viewBox="0 0 16 16"
-                      >
-                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
-                      </svg>
-                      Share on LinkedIn
-                    </a>
-                  </div>
-                </div>
-                {/* Button */}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* End Content */}
-      {/* Sidebar */}
-      <div className="lg:col-span-1 lg:w-full  ">
-        <div className="sticky top-0 start-0 py-16 lg:ps-8">
-          {/* Avatar Media */}
-          <div className="group flex items-center gap-x-3 border-b border-gray-200 pb-8 mb-8 dark:border-neutral-700">
-
-            <a className="group grow block focus:outline-none" target="_blank"
-            href="https://www.instagram.com/purely.services/">
-              <h5 className="group-hover:text-gray-600 group-focus:text-gray-600 text-sm font-semibold text-gray-800 dark:group-hover:text-neutral-400 dark:group-focus:text-neutral-400 ">
-              Purely Services
-              </h5>
-              <p className="text-sm text-gray-500 dark:text-neutral-500">
-              Al Muroor, Abu Dhabi UAE
-              </p>
-            </a>
-            <div className="grow">
-              <div className="flex justify-end">
-                <button
-                  type="button"
-                  className="py-1.5 px-2.5 inline-flex items-center gap-x-2 text-xs font-medium rounded-lg border border-transparent bg-blue-600 text-white pointer-events-none"
-                >
-                  <svg
-                    className="shrink-0 size-4"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width={24}
-                    height={24}
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
-                    <circle cx={9} cy={7} r={4} />
-                    <line x1={19} x2={19} y1={8} y2={14} />
-                    <line x1={22} x2={16} y1={11} y2={11} />
-                  </svg>
-                  Follow
-                </button>
-              </div>
-            </div>
-          </div>
-          {/* End Avatar Media */}
-          <div className="space-y-6">
-            {/* Media */}
-            <a
-              className="group flex items-center gap-x-6 focus:outline-none"
-              href="#"
-            >
-              <div className="grow">
-                <span className="text-sm font-bold text-gray-800 group-hover:text-blue-600 group-focus:text-blue-600  dark:group-hover:text-blue-500 dark:group-focus:text-blue-500">
-                Delivering exceptional results in every service.
-                </span>
-              </div>
-              <div className="shrink-0 relative rounded-lg overflow-hidden size-20">
-                <img
-                  className="size-full absolute top-0 start-0 object-cover rounded-lg"
-                  src="https://images.unsplash.com/photo-1567016526105-22da7c13161a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&q=80"
-                  alt="Blog Image"
-                />
-              </div>
-            </a>
-            {/* End Media */}
-            {/* Media */}
-            <a
-              className="group flex items-center gap-x-6 focus:outline-none"
-              href="#"
-            >
-              <div className="grow">
-                <span className="text-sm font-bold text-gray-800 group-hover:text-blue-600 group-focus:text-blue-600  dark:group-hover:text-blue-500 dark:group-focus:text-blue-500">
-                On-time, every time, with services you can count on.
-                </span>
-              </div>
-              <div className="shrink-0 relative rounded-lg overflow-hidden size-20">
-                <img
-                  className="size-full absolute top-0 start-0 object-cover rounded-lg"
-                  src="https://images.unsplash.com/photo-1542125387-c71274d94f0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&q=80"
-                  alt="Blog Image"
-                />
-              </div>
-            </a>
-            {/* End Media */}
-            {/* Media */}
-            <a
-              className="group flex items-center gap-x-6 focus:outline-none"
-              href="#"
-            >
-              <div className="grow">
-                <span className="text-sm font-bold text-gray-800 group-hover:text-blue-600 group-focus:text-blue-600  dark:group-hover:text-blue-500 dark:group-focus:text-blue-500">
-                Prioritizing your satisfaction with every visit.
-                </span>
-              </div>
-              <div className="shrink-0 relative rounded-lg overflow-hidden size-20">
-                <img
-                  className="size-full absolute top-0 start-0 object-cover rounded-lg"
-                  src="https://images.unsplash.com/photo-1586232702178-f044c5f4d4b7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&q=80"
-                  alt="Blog Image"
-                />
-              </div>
-            </a>
-            {/* End Media */}
-          </div>
-        </div>
-      </div>
-      {/* End Sidebar */}
-    </div>
-  </div>
-  {/* End Blog Article */}
-</>
-
-  )
+interface Translations {
+  t: (key: string) => string; // Adjust this as needed based on your translation structure
 }
 
-export default AboutMain
+const AboutMain = () => {
+  const [direction, setDirection] = useState<string>("text-left");
+  const [t, setTranslations] = useState<Translations | null>(null);
+  const locale = useParams<{ locale: string }>();
+  useEffect(() => {
+    const fetchTranslations = async () => {
+      try {
+        const translations = await initTranslations(locale.locale, ["About"]);
+        setTranslations(translations);
+
+        if (locale.locale === "en") {
+          setDirection("text-left");
+        } else if (locale.locale == "ar-AE") {
+          setDirection("text-right");
+        }
+      } catch (error) {
+        console.error("Failed to load translations:", error);
+      }
+    };
+
+    if (locale) {
+      fetchTranslations();
+    }
+  }, [locale]);
+
+  if (!t) {
+    return <div>Loading...</div>;
+  }
+
+  return (
+    <Fragment>
+      {t.t && (
+        <div className=" my-12 max-w-[85rem] px-4 sm:px-6 lg:px-8 mx-auto">
+          <div className="grid lg:grid-cols-3 gap-y-8 lg:gap-y-0 lg:gap-x-6">
+            {/* Content */}
+            <div className="lg:col-span-2">
+              <div className="py-8 lg:pe-8">
+                <div className="space-y-5 lg:space-y-8">
+                  <h2 className={`text-3xl ${direction} font-bold lg:text-5xl`}>{t.t("header")}</h2>
+                  <div className="flex items-center gap-x-5">
+                    <a
+                      className="inline-flex items-center gap-1.5 py-1 px-3 sm:py-2 sm:px-4 rounded-full text-xs sm:text-sm bg-gray-800 text-white hover:bg-gray-200 focus:outline-none focus:bg-gray-700    "
+                      href="#"
+                    >
+                      Purely Cleaning Services
+                    </a>
+                    <p className="text-xs sm:text-sm text-gray-800 ">
+                    {t.t("date")}
+                    </p>
+                  </div>
+                  <p className={` ${direction} md:text-lg text-gray-800  `}>
+                  {t.t("p1")}
+                  </p>
+                  <p className={` ${direction} md:text-lg text-gray-800  `}>
+                  {t.t("p2")}
+                  </p>
+                  <div className="text-center">
+                    <div className="grid lg:grid-cols-2 gap-3">
+                      <div className="grid grid-cols-2 lg:grid-cols-1 gap-3">
+                        <figure className="relative w-full h-60">
+                          <img
+                            className="size-full absolute top-0 start-0 object-cover rounded-xl"
+                            src="/clean.jpg"
+                            alt="Blog Image"
+                          />
+                        </figure>
+                        <figure className="relative w-full h-60">
+                          <img
+                            className="size-full absolute top-0 start-0 object-cover rounded-xl"
+                            src="/office.png"
+                            alt="Blog Image"
+                          />
+                        </figure>
+                      </div>
+                      <figure className="relative w-full h-72 sm:h-96 lg:h-full">
+                        <img
+                          className="size-full absolute top-0 start-0 object-cover rounded-xl"
+                          src="/hero.webp"
+                          alt="Blog Image"
+                        />
+                      </figure>
+                    </div>
+                    <span className="mt-3 block text-sm text-center text-gray-500 dark:text-neutral-500">
+                      Working process
+                    </span>
+                  </div>
+                  <p className={` ${direction} md:text-lg text-gray-800  `}>
+                  {t.t("p3")}
+                  </p>
+                  <p className={` ${direction} md:text-lg text-gray-800  `}>
+                  {t.t("p4")}
+                  </p>
+                  <blockquote className="text-center p-4 sm:px-7">
+                    <p className="text-xl font-medium text-gray-800 lg:text-2xl lg:leading-normal xl:text-2xl xl:leading-normal ">
+                    {t.t("head")}
+                    </p>
+                  </blockquote>
+                  <figure>
+                    <img
+                      className="w-full object-cover rounded-xl"
+                      src="/hero.webp"
+                      alt="Blog Image"
+                    />
+                    <figcaption className="mt-3 text-sm text-center text-gray-500 dark:text-neutral-500">
+                      Restoring the shine to your floors.
+                    </figcaption>
+                  </figure>
+
+                  <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center gap-y-5 lg:gap-y-0">
+                    <div className="flex justify-end items-center gap-x-1.5">
+                      {/* Button */}
+                      <div className="hs-tooltip inline-block">
+                        <button
+                          type="button"
+                          className="hs-tooltip-toggle flex items-center gap-x-2 text-sm text-gray-500 hover:text-gray-800 focus:outline-none focus:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
+                        >
+                          <svg
+                            className="shrink-0 size-4"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width={24}
+                            height={24}
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth={2}
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          >
+                            <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+                          </svg>
+                          875
+                          <span
+                            className="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible -z-1 py-1 px-2 bg-gray-900 text-xs font-medium text-white rounded shadow-sm dark:bg-black"
+                            role="tooltip"
+                          >
+                            Like
+                          </span>
+                        </button>
+                      </div>
+                      {/* Button */}
+                      <div className="block h-3 border-e border-gray-300 mx-3 dark:border-neutral-600" />
+                      {/* Button */}
+                      <div className="hs-tooltip inline-block">
+                        <button
+                          type="button"
+                          className="hs-tooltip-toggle flex items-center gap-x-2 text-sm text-gray-500 hover:text-gray-800 focus:outline-none focus:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
+                        >
+                          <svg
+                            className="shrink-0 size-4"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width={24}
+                            height={24}
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth={2}
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          >
+                            <path d="m3 21 1.9-5.7a8.5 8.5 0 1 1 3.8 3.8z" />
+                          </svg>
+                          16
+                          <span
+                            className="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible -z-1 py-1 px-2 bg-gray-900 text-xs font-medium text-white rounded shadow-sm dark:bg-black"
+                            role="tooltip"
+                          >
+                            Comment
+                          </span>
+                        </button>
+                      </div>
+                      {/* Button */}
+                      <div className="block h-3 border-e border-gray-300 mx-3 dark:border-neutral-600" />
+                      {/* Button */}
+                      <div className="hs-dropdown relative inline-flex">
+                        <button
+                          id="hs-blog-article-share-dropdown"
+                          type="button"
+                          className="hs-dropdown-toggle flex items-center gap-x-2 text-sm text-gray-500 hover:text-gray-800 focus:outline-none focus:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
+                          aria-haspopup="menu"
+                          aria-expanded="false"
+                          aria-label="Dropdown"
+                        >
+                          <svg
+                            className="shrink-0 size-4"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width={24}
+                            height={24}
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth={2}
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          >
+                            <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8" />
+                            <polyline points="16 6 12 2 8 6" />
+                            <line x1={12} x2={12} y1={2} y2={15} />
+                          </svg>
+                          Share
+                        </button>
+                        <div
+                          className="hs-dropdown-menu w-56 transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden mb-1 -z-1 bg-gray-900 shadow-md rounded-xl p-2 dark:bg-black"
+                          role="menu"
+                          aria-orientation="vertical"
+                          aria-labelledby="hs-blog-article-share-dropdown"
+                        >
+                          <a
+                            className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-400 hover:bg-white/10 focus:outline-none focus:bg-white/10 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:focus:bg-neutral-900"
+                            href="#"
+                          >
+                            <svg
+                              className="shrink-0 size-4"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width={24}
+                              height={24}
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              strokeWidth={2}
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            >
+                              <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+                              <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+                            </svg>
+                            Copy link
+                          </a>
+                          <div className="border-t border-gray-600 my-2 dark:border-neutral-800" />
+                          <a
+                            className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-400 hover:bg-white/10 focus:outline-none focus:bg-white/10 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:focus:bg-neutral-900"
+                            href="#"
+                          >
+                            <svg
+                              className="shrink-0 size-4"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width={16}
+                              height={16}
+                              fill="currentColor"
+                              viewBox="0 0 16 16"
+                            >
+                              <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                            </svg>
+                            Share on Twitter
+                          </a>
+                          <a
+                            className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-400 hover:bg-white/10 focus:outline-none focus:bg-white/10 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:focus:bg-neutral-900"
+                            href="#"
+                          >
+                            <svg
+                              className="shrink-0 size-4"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width={16}
+                              height={16}
+                              fill="currentColor"
+                              viewBox="0 0 16 16"
+                            >
+                              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                            </svg>
+                            Share on Facebook
+                          </a>
+                          <a
+                            className="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-400 hover:bg-white/10 focus:outline-none focus:bg-white/10 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:focus:bg-neutral-900"
+                            href="#"
+                          >
+                            <svg
+                              className="shrink-0 size-4"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width={16}
+                              height={16}
+                              fill="currentColor"
+                              viewBox="0 0 16 16"
+                            >
+                              <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                            </svg>
+                            Share on LinkedIn
+                          </a>
+                        </div>
+                      </div>
+                      {/* Button */}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* End Content */}
+            {/* Sidebar */}
+            <div className="lg:col-span-1 lg:w-full  ">
+              <div className="sticky top-0 start-0 py-24 lg:ps-8">
+                {/* Avatar Media */}
+                <div className="group flex items-center gap-x-3 border-b border-gray-200 pb-8 mb-8 dark:border-neutral-700">
+                  <a
+                    className="group grow block focus:outline-none"
+                    target="_blank"
+                    href="https://www.instagram.com/purely.services/"
+                  >
+                    <h5 className="group-hover:text-gray-600 group-focus:text-gray-600 text-sm font-semibold text-gray-800 dark:group-hover:text-neutral-400 dark:group-focus:text-neutral-400 ">
+                      Purely Services
+                    </h5>
+                    <p className="text-sm text-gray-500 dark:text-neutral-500">
+                      Al Muroor, Abu Dhabi UAE
+                    </p>
+                  </a>
+                  <div className="grow">
+                    <div className="flex justify-end">
+                      <button
+                        type="button"
+                        className="py-1.5 px-2.5 inline-flex items-center gap-x-2 text-xs font-medium rounded-lg border border-transparent bg-blue-600 text-white pointer-events-none"
+                      >
+                        <svg
+                          className="shrink-0 size-4"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width={24}
+                          height={24}
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth={2}
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        >
+                          <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                          <circle cx={9} cy={7} r={4} />
+                          <line x1={19} x2={19} y1={8} y2={14} />
+                          <line x1={22} x2={16} y1={11} y2={11} />
+                        </svg>
+                        Follow
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                {/* End Avatar Media */}
+                <div className="space-y-6">
+                  {/* Media */}
+                  <a
+                    className="group flex items-center gap-x-6 focus:outline-none"
+                    href="#"
+                  >
+                    <div className="grow">
+                      <span className={` ${direction} text-sm font-bold text-gray-800 group-hover:text-blue-600 group-focus:text-blue-600  dark:group-hover:text-blue-500 dark:group-focus:text-blue-500 `}>
+                        {t.t("delivery")}
+                      </span>
+                    </div>
+                    <div className="shrink-0 relative rounded-lg overflow-hidden size-20">
+                      <img
+                        className="size-full absolute top-0 start-0 object-cover rounded-lg"
+                        src="https://images.unsplash.com/photo-1567016526105-22da7c13161a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&q=80"
+                        alt="Blog Image"
+                      />
+                    </div>
+                  </a>
+                  {/* End Media */}
+                  {/* Media */}
+                  <a
+                    className="group flex items-center gap-x-6 focus:outline-none"
+                    href="#"
+                  >
+                    <div className="grow">
+                      <span className={` ${direction} text-sm font-bold text-gray-800 group-hover:text-blue-600 group-focus:text-blue-600  dark:group-hover:text-blue-500 dark:group-focus:text-blue-500 `}>
+                        {t.t("every")}
+                      </span>
+                    </div>
+                    <div className="shrink-0 relative rounded-lg overflow-hidden size-20">
+                      <img
+                        className="size-full absolute top-0 start-0 object-cover rounded-lg"
+                        src="https://images.unsplash.com/photo-1542125387-c71274d94f0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&q=80"
+                        alt="Blog Image"
+                      />
+                    </div>
+                  </a>
+                  {/* End Media */}
+                  {/* Media */}
+                  <a
+                    className="group flex items-center gap-x-6 focus:outline-none"
+                    href="#"
+                  >
+                    <div className="grow">
+                      <span className={` ${direction} text-sm font-bold text-gray-800 group-hover:text-blue-600 group-focus:text-blue-600  dark:group-hover:text-blue-500 dark:group-focus:text-blue-500 `}>
+                        {t.t("satis")}
+                      </span>
+                    </div>
+                    <div className="shrink-0 relative rounded-lg overflow-hidden size-20">
+                      <img
+                        className="size-full absolute top-0 start-0 object-cover rounded-lg"
+                        src="https://images.unsplash.com/photo-1586232702178-f044c5f4d4b7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&q=80"
+                        alt="Blog Image"
+                      />
+                    </div>
+                  </a>
+                  {/* End Media */}
+                </div>
+              </div>
+            </div>
+            {/* End Sidebar */}
+          </div>
+        </div>
+      )}
+    </Fragment>
+  );
+};
+
+export default AboutMain;

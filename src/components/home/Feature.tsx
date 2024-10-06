@@ -53,7 +53,7 @@ const Feature = () => {
           <div className="mt-5 sm:mt-10 lg:mt-0">
             <div className="space-y-6 sm:space-y-8">
               {/* Title */}
-              <div className="space-y-2 md:space-y-4">
+              <div className="space-y-2 md:space-y-4 ">
                 <h2 className={`font-bold text-3xl lg:text-4xl text-gray-800 ${direction} `}>
                   {t.t("header")}
                 </h2>
@@ -63,8 +63,8 @@ const Feature = () => {
               </div>
               {/* End Title */}
               {/* List */}
-              <ul className="space-y-2 sm:space-y-4">
-                <li className="flex gap-x-3">
+              <ul className="space-y-2 sm:space-y-4 ">
+                <li className="flex  gap-x-3 ">
                   <span className="mt-0.5 size-5 flex justify-center items-center rounded-full bg-gray-900 text-gray-100 ">
                     <svg
                       className="shrink-0 size-3.5"
@@ -86,9 +86,9 @@ const Feature = () => {
                       <span className="font-bold">{t.t("quick")} </span>{" "}
                       {t.t("Cleaning")}
                     </span>
-                  </div>
+                  </div> 
                 </li>
-                <li className="flex gap-x-3">
+                <li className="flex  gap-x-3">
                   <span className="mt-0.5 size-5 flex justify-center items-center rounded-full bg-gray-900 text-gray-100 ">
                     <svg
                       className="shrink-0 size-3.5"
