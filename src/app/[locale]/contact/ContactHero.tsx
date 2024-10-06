@@ -12,6 +12,7 @@ const ContactHero = () => {
 
   const [direction, setDirection] = useState<string>("text-left");
   const [t, setTranslations] = useState<Translations | null>(null);
+  
   const locale = useParams<{ locale: string }>();
   useEffect(() => {
     const fetchTranslations = async () => {
